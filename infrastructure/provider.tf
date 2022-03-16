@@ -8,6 +8,6 @@ terraform {
     backend "s3" {
         bucket = "terraform-state-joaopauloribeiro"
         key = "state/modulo1/terraform.tfstate"
-        region = var.region
+        region = "${var.region}"
     }
 }

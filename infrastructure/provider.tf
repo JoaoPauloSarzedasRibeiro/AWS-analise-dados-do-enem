@@ -1,6 +1,6 @@
 #Definição do provedor conforme especificado na variavel region
 provider "aws" {
-  region = var.region
+  region = "${var.region}"
 }
 
 # Centralizacao do arquivo de controle do estado do terraform
